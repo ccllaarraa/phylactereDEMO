@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    animation-name: gradient;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+}
+
+@keyframes gradient {
+    0%   {background-color:#d08dff;}
+    50%  {background-color: #dcb0ff;}
+    100% {background-color: #e58df3;}
+}
+
+/* ----------HERE For the main section----------  */
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    
+}
+
+.home-content-fr {
+    width: 60%;
+    padding: 40px;
+    font-size:calc(14px + 0.4vw);
+    line-height: 1.4;
+    font-family: 'FrenchFont';    
+}
+
+.home-content-eng {
+    width: 60%;
+    padding: 40px;
+    font-size:calc(14px + 0.4vw);
+    line-height: 1.4;
+    font-family: 'EnglishFont';    
+}
+
+@font-face {
+    font-family: 'EnglishFont';
+    src: url(font/GFSTheokritos.woff);
+    }
+
+@font-face {
+    font-family: 'FrenchFont';
+    src: url(font/CENSCBK.TTF);
+    }
+
+
+
+.contour
+{
+color: red;
+}
+
+
+a.contour
+{
+color: red;
+}
+
+.contour:hover
+{
+color: orange;
+}
+
+
+/* ----------HERE For the FOOTER section----------  */
+.footer {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.language-container {
+    padding: 30px;
+
+}
+
+.pto-button {
+    padding: 30px;
+    text-decoration: none;
+
+}
+
+.fr-button{
+    font-family: 'FrenchFont'; 
+    text-decoration: none; 
+}
+
+.eng-button {
+    font-family: 'EnglishFont';
+    text-decoration: none;
+}
+
+
+/* ----------HERE For the PTO PAGE section----------  */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.logo {
+
+    width: 700px;
+}
+
+.pto-main-section {
+    width: 100%;
+    height: 800px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {  
+    display: flex;
+    border: none;
+    outline: none;
+    background-image: url(../images/time.png);
+    resize: none;
+    animation-name: gradientShadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+
+  textarea:focus {
+    background-image:url(../images/time_focus.png); 
+  }
+
+  @keyframes gradientShadow {
+    0% { box-shadow: 1px 1px 50px 10px #d08dff; }
+    50% { box-shadow: 1px 1px 50px 10px #dcb0ff; }
+    100% { box-shadow: 1px 1px 50px 10px #e58df3; }
+}
+
+
+ .buttonInput {
+     display:flex;
+    border: none;
+    outline: none;
+ } 
+
+.draggable { 
+    width: 100px; 
+    padding: 0.5em;
+ }
+
