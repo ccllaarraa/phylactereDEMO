@@ -1,0 +1,3 @@
+[submodule "snusproject2"]
+	path = snusproject2
+	url = git@github.com:ccllaarraa/snusproject.git
